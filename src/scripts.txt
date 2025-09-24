@@ -1,0 +1,7 @@
+dotnet new classlib -n "PaintHub.Domain" -o PaintHub.Domain
+dotnet new classlib -n "PaintHub.Domain.Shared" -o PaintHub.Domain.Shared
+dotnet new classlib -n "PaintHub.Application" -o PaintHub.Application
+dotnet new classlib -n "PaintHub.Application.Contract" -o PaintHub.Application.Contract
+dotnet new classlib -n "PaintHub.Admin.Application" -o PaintHub.Admin.Application
+dotnet new classlib -n "PaintHub.Admin.Application.Contract" -o PaintHub.Admin.Application.Contract
+dotnet new classlib -n "PaintHub.EntityFramework" -o PaintHub.EntityFramework

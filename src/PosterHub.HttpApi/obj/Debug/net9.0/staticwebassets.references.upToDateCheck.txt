@@ -1,0 +1,3 @@
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.Admin.Web.Mvc\obj\Debug\net9.0\staticwebassets.build.json
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.Admin.Web.Mvc\obj\Debug\net9.0\staticwebassets.build.json
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.Admin.Web.Mvc\obj\Debug\net9.0\staticwebassets.build.json

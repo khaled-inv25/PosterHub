@@ -1,0 +1,11 @@
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\bin\Debug\net9.0\PaintHub.Application.Contract.deps.json
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\bin\Debug\net9.0\PaintHub.Application.Contract.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\bin\Debug\net9.0\PaintHub.Application.Contract.pdb
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.AssemblyInfoInputs.cache
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.AssemblyInfo.cs
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.csproj.CoreCompileInputs.cache
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\refint\PaintHub.Application.Contract.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\PaintHub.Application.Contract.pdb
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Application.Contract\obj\Debug\net9.0\ref\PaintHub.Application.Contract.dll

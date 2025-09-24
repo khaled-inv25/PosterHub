@@ -1,0 +1,72 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PosterHub.Admin.Application/1.0.0": {
+        "dependencies": {
+          "PosterHub.Admin.Application.Contract": "1.0.0",
+          "PosterHub.Domain": "1.0.0"
+        },
+        "runtime": {
+          "PosterHub.Admin.Application.dll": {}
+        }
+      },
+      "PosterHub.Admin.Application.Contract/1.0.0": {
+        "dependencies": {
+          "PosterHub.Domain.Shared": "1.0.0"
+        },
+        "runtime": {
+          "PosterHub.Admin.Application.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PosterHub.Domain/1.0.0": {
+        "dependencies": {
+          "PosterHub.Domain.Shared": "1.0.0"
+        },
+        "runtime": {
+          "PosterHub.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "PosterHub.Domain.Shared/1.0.0": {
+        "runtime": {
+          "PosterHub.Domain.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PosterHub.Admin.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosterHub.Admin.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosterHub.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosterHub.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,11 @@
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\bin\Debug\net9.0\PaintHub.Admin.Application.deps.json
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\bin\Debug\net9.0\PaintHub.Admin.Application.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\bin\Debug\net9.0\PaintHub.Admin.Application.pdb
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.AssemblyInfoInputs.cache
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.AssemblyInfo.cs
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.csproj.CoreCompileInputs.cache
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\refint\PaintHub.Admin.Application.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PaintHub.Admin.Application.pdb
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\ref\PaintHub.Admin.Application.dll

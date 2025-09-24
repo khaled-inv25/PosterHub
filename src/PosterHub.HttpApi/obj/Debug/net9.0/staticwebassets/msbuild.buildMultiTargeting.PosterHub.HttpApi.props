@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\PosterHub.HttpApi.props" />
+</Project>

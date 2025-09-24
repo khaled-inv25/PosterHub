@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  
+
+  <ItemGroup>
+    <ProjectReference Include="..\PaintHub.Admin.Application.Contract\PosterHub.Admin.Application.Contract.csproj" />
+    <ProjectReference Include="..\PaintHub.Domain\PosterHub.Domain.csproj" />
+  </ItemGroup>
+
+</Project>

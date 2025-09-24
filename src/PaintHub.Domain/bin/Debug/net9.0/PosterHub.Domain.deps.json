@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PosterHub.Domain/1.0.0": {
+        "dependencies": {
+          "PosterHub.Domain.Shared": "1.0.0"
+        },
+        "runtime": {
+          "PosterHub.Domain.dll": {}
+        }
+      },
+      "PosterHub.Domain.Shared/1.0.0": {
+        "runtime": {
+          "PosterHub.Domain.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PosterHub.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosterHub.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

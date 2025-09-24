@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "PaintHub.Admin.Application.Contract/1.0.0": {
+        "runtime": {
+          "PaintHub.Admin.Application.Contract.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PaintHub.Admin.Application.Contract/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
