@@ -4,6 +4,7 @@ using PosterHub.Admin.Application.Contract;
 using PosterHub.Domain;
 using PosterHub.EntityFramework;
 using PosterHub.EntityFramework.AppDbContext;
+using PosterHub.Logger.Contract;
 
 namespace PosterHub.HttpApi.Extensions
 {
@@ -29,6 +30,9 @@ namespace PosterHub.HttpApi.Extensions
 
             });
         }
+
+        public static void ConfigureLoggerService(this IServiceCollection services) =>
+            services.AddSingleton<ILoggerManager, AdminLoggerManager>();
 
         public static void ConfigurRepositoryManager(this IServiceCollection services)
         {

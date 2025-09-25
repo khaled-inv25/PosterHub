@@ -1,12 +1,10 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "3j7nUd8aOg4=",
-=======
-  "dgSpecHash": "+K9H+2OcA5A=",
->>>>>>> d6c7b22 (9/24)
+  "dgSpecHash": "/anE1xz4zSA=",
   "success": true,
-  "projectFilePath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Admin.Application\\PosterHub.Admin.Application.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application\\PosterHub.Admin.Application.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\DELL\\.nuget\\packages\\nlog\\6.0.4\\nlog.6.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

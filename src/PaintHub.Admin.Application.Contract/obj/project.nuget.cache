@@ -1,12 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "0I3FIMffQCE=",
-=======
   "dgSpecHash": "wbveOYfSa6A=",
->>>>>>> d6c7b22 (9/24)
   "success": true,
-  "projectFilePath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj",
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

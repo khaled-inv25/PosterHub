@@ -1237,20 +1237,15 @@
       "PosterHub.Admin.Application.Contract/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v9.0",
-<<<<<<< HEAD
-=======
         "dependencies": {
           "PosterHub.Domain.Shared": "1.0.0"
         },
->>>>>>> d6c7b22 (9/24)
         "compile": {
           "bin/placeholder/PosterHub.Admin.Application.Contract.dll": {}
         },
         "runtime": {
           "bin/placeholder/PosterHub.Admin.Application.Contract.dll": {}
         }
-<<<<<<< HEAD
-=======
       },
       "PosterHub.Domain.Shared/1.0.0": {
         "type": "project",
@@ -1261,7 +1256,6 @@
         "runtime": {
           "bin/placeholder/PosterHub.Domain.Shared.dll": {}
         }
->>>>>>> d6c7b22 (9/24)
       }
     }
   },
@@ -4189,14 +4183,11 @@
       "type": "project",
       "path": "../PaintHub.Admin.Application.Contract/PosterHub.Admin.Application.Contract.csproj",
       "msbuildProject": "../PaintHub.Admin.Application.Contract/PosterHub.Admin.Application.Contract.csproj"
-<<<<<<< HEAD
-=======
     },
     "PosterHub.Domain.Shared/1.0.0": {
       "type": "project",
       "path": "../PaintHub.Domain.Shared/PosterHub.Domain.Shared.csproj",
       "msbuildProject": "../PaintHub.Domain.Shared/PosterHub.Domain.Shared.csproj"
->>>>>>> d6c7b22 (9/24)
     }
   },
   "projectFileDependencyGroups": {
@@ -4207,23 +4198,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\EBH\\.nuget\\packages\\": {},
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PosterHub.Presentation\\PosterHub.Presentation.csproj",
+      "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Presentation\\PosterHub.Presentation.csproj",
       "projectName": "PosterHub.Presentation",
-      "projectPath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PosterHub.Presentation\\PosterHub.Presentation.csproj",
-      "packagesPath": "C:\\Users\\EBH\\.nuget\\packages\\",
-      "outputPath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PosterHub.Presentation\\obj\\",
+      "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Presentation\\PosterHub.Presentation.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\EBH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4238,13 +4229,8 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-<<<<<<< HEAD
-            "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj": {
-              "projectPath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj"
-=======
             "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj": {
               "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj"
->>>>>>> d6c7b22 (9/24)
             }
           }
         }
@@ -4259,7 +4245,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.200"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net9.0": {
@@ -4290,7 +4276,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

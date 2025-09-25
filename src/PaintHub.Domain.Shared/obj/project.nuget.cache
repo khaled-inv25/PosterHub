@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eNRqoqJQzA4=",
+  "dgSpecHash": "u2CvY8kq+lM=",
   "success": true,
-  "projectFilePath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Domain.Shared\\PosterHub.Domain.Shared.csproj",
+  "projectFilePath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Domain.Shared\\PosterHub.Domain.Shared.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

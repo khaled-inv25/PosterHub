@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosterHub.HttpApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+897e2fc7ba9e78a39c5c66a4583d2a0c911750c3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f745e284bb7b25a6a7cc0858be54e3feeb122ceb")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosterHub.HttpApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosterHub.HttpApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

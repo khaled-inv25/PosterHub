@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj": {}
+    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj": {}
   },
   "projects": {
-    "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj": {
+    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj",
+        "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj",
         "projectName": "PosterHub.Application.Contract",
-        "projectPath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj",
-        "packagesPath": "C:\\Users\\EBH\\.nuget\\packages\\",
-        "outputPath": "D:\\projects\\ASP.NET\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\obj\\",
+        "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\PosterHub.Application.Contract.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Application.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\EBH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -44,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net9.0": {
@@ -65,7 +65,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.203/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

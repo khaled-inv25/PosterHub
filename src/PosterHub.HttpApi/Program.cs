@@ -1,10 +1,14 @@
 using Microsoft.AspNetCore.HttpOverrides;
+using NLog;
 using PosterHub.HttpApi.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 
+LogManager.Setup().LoadConfigurationFromFile(string.Concat(Directory.GetCurrentDirectory(), "/nlog.config"));
+
 builder.Services.ConfigureCors();
 builder.Services.IISConfiguration();
+builder.Services.ConfigureLoggerService();
 builder.Services.ConfigurRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
@@ -34,31 +38,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 
 app.UseCors("CorsPolicy");
 app.UseAuthorization();
-<<<<<<< HEAD
-=======
 
->>>>>>> d6c7b22 (9/24)
-/*
-app.Map("/admin", builder =>
-{
-    builder.Run(async context =>
-    {
-        context.Response.Redirect("/admin");
-        await Task.CompletedTask;
-    });
-});
-app.Map("/path", builder =>
-{
-    builder.Run(async context =>
-    {
-        await context.Response.WriteAsync(Directory.GetCurrentDirectory());
-    });
-});
-*/
-<<<<<<< HEAD
-=======
-
->>>>>>> d6c7b22 (9/24)
 app.MapControllers();
 
 app.Run();

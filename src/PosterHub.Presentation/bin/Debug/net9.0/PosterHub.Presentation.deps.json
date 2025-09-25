@@ -745,20 +745,15 @@
         }
       },
       "PosterHub.Admin.Application.Contract/1.0.0": {
-<<<<<<< HEAD
-=======
         "dependencies": {
           "PosterHub.Domain.Shared": "1.0.0"
         },
->>>>>>> d6c7b22 (9/24)
         "runtime": {
           "PosterHub.Admin.Application.Contract.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
         }
-<<<<<<< HEAD
-=======
       },
       "PosterHub.Domain.Shared/1.0.0": {
         "runtime": {
@@ -767,7 +762,6 @@
             "fileVersion": "1.0.0.0"
           }
         }
->>>>>>> d6c7b22 (9/24)
       }
     }
   },
@@ -1278,14 +1272,11 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-<<<<<<< HEAD
-=======
     },
     "PosterHub.Domain.Shared/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
->>>>>>> d6c7b22 (9/24)
     }
   }
 }
