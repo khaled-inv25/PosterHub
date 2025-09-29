@@ -9,6 +9,6 @@ namespace PosterHub.Domain.Shared
         void Create(T entity);
         void Update(T entity);
         void Delete(T entity);
-
+        T? FindById(object id, bool trackChanges);
     }
 }

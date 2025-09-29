@@ -18,13 +18,26 @@ namespace PosterHub.Presentation.Controllers
         [HttpGet]
         public IActionResult GetCategories()
         {
-            return Ok(_serviceManager.CategoryService.GetCategories(false));
+            return Ok(_serviceManager.Category.GetCategories(false));
+        }
+
+        [HttpGet("{id:int}", Name = "CategoryById")]
+        public IActionResult GetCategoryById(int id)
+        {
+            return Ok(_serviceManager.Category.GetCategoryById(id, false));
         }
 
         [HttpPost]
         public IActionResult CreateCategory([FromBody] CreateCategoryDto model)
         {
-            return Ok(_serviceManager.CategoryService.CreateCategory(model));
+            if (model == null)
+            {
+                return BadRequest(ModelState);
+            }
+
+            var createdCategory = _serviceManager.Category.CreateCategory(model);
+
+            return CreatedAtRoute("CategoryById", new { id = 1 }, createdCategory);
         }
     }
 }

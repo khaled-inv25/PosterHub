@@ -39,5 +39,9 @@ namespace PosterHub.EntityFramework
             return !trackChanges ? Context.Set<T>().Where(expression).AsNoTracking() : Context.Set<T>().Where(expression);
         }
 
+        public T? FindById(object id, bool trackChanges)
+        {
+            return !trackChanges ? Context.Set<T>().AsNoTracking().FirstOrDefault(e => EF.Property<object>(e, "Id") == id) : Context.Set<T>().Find(id);
+        }
     }
 }

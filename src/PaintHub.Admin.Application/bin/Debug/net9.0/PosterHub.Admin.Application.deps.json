@@ -8,11 +8,21 @@
     ".NETCoreApp,Version=v9.0": {
       "PosterHub.Admin.Application/1.0.0": {
         "dependencies": {
+          "NLog": "6.0.4",
           "PosterHub.Admin.Application.Contract": "1.0.0",
-          "PosterHub.Domain": "1.0.0"
+          "PosterHub.Domain": "1.0.0",
+          "PosterHub.Logger.Contract": "1.0.0"
         },
         "runtime": {
           "PosterHub.Admin.Application.dll": {}
+        }
+      },
+      "NLog/6.0.4": {
+        "runtime": {
+          "lib/netstandard2.1/NLog.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.0.4.4534"
+          }
         }
       },
       "PosterHub.Admin.Application.Contract/1.0.0": {
@@ -44,6 +54,14 @@
             "fileVersion": "1.0.0.0"
           }
         }
+      },
+      "PosterHub.Logger.Contract/1.0.0": {
+        "runtime": {
+          "PosterHub.Logger.Contract.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
       }
     }
   },
@@ -52,6 +70,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "NLog/6.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Xr+lIk1ZlTTFXEqnxQVLxrDqZlt2tm5X+/AhJbaY2emb/dVtGDiU5QuEtj3gHtwV/SWlP/rJ922I/BPuOJXlRw==",
+      "path": "nlog/6.0.4",
+      "hashPath": "nlog.6.0.4.nupkg.sha512"
     },
     "PosterHub.Admin.Application.Contract/1.0.0": {
       "type": "project",
@@ -64,6 +89,11 @@
       "sha512": ""
     },
     "PosterHub.Domain.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PosterHub.Logger.Contract/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

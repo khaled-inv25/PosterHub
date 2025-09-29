@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosterHub.Admin.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f745e284bb7b25a6a7cc0858be54e3feeb122ceb")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6961261c7fedaf52d00b25a7f3011698bee596ae")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosterHub.Admin.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosterHub.Admin.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

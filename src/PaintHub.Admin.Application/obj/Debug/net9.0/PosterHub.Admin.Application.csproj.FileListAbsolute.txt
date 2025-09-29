@@ -38,3 +38,5 @@ D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\D
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\refint\PosterHub.Admin.Application.dll
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\PosterHub.Admin.Application.pdb
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\obj\Debug\net9.0\ref\PosterHub.Admin.Application.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\bin\Debug\net9.0\PosterHub.Logger.Contract.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PaintHub.Admin.Application\bin\Debug\net9.0\PosterHub.Logger.Contract.pdb

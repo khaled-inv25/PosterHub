@@ -5649,8 +5649,8 @@
     },
     "PosterHub.Logger.Contract/1.0.0": {
       "type": "project",
-      "path": "../../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj",
-      "msbuildProject": "../../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj"
+      "path": "../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj",
+      "msbuildProject": "../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj"
     },
     "PosterHub.Presentation/1.0.0": {
       "type": "project",

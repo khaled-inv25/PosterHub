@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosterHub.EntityFramework",
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosterHub.Presentation", "src\PosterHub.Presentation\PosterHub.Presentation.csproj", "{5CB490C2-E769-01A1-35C4-90393E44FFE5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosterHub.Logger.Contract", "src\PosterHub.Logger.Contract\PosterHub.Logger.Contract.csproj", "{669D400D-A1DE-5A99-9BAE-158D07B6739A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{5CB490C2-E769-01A1-35C4-90393E44FFE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CB490C2-E769-01A1-35C4-90393E44FFE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CB490C2-E769-01A1-35C4-90393E44FFE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{669D400D-A1DE-5A99-9BAE-158D07B6739A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{669D400D-A1DE-5A99-9BAE-158D07B6739A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{669D400D-A1DE-5A99-9BAE-158D07B6739A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{669D400D-A1DE-5A99-9BAE-158D07B6739A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -81,6 +87,7 @@ Global
 		{274A4F66-CB38-818E-949C-F0B75905BC7A} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{53F044F4-EA72-26DD-8681-0520EB5B7A33} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{F0616926-F2EA-D8F9-1AA3-D215635B076F} = {BF68EB91-6A77-4283-83C9-1C980BBAE323}
+		{669D400D-A1DE-5A99-9BAE-158D07B6739A} = {BF68EB91-6A77-4283-83C9-1C980BBAE323}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {60794DBC-3FE1-4736-888A-D0D845C311AE}

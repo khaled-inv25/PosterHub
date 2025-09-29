@@ -6,11 +6,16 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="NLog" Version="6.0.4" />
+  </ItemGroup>
+
   
 
   <ItemGroup>
     <ProjectReference Include="..\PaintHub.Admin.Application.Contract\PosterHub.Admin.Application.Contract.csproj" />
     <ProjectReference Include="..\PaintHub.Domain\PosterHub.Domain.csproj" />
+    <ProjectReference Include="..\PosterHub.Logger.Contract\PosterHub.Logger.Contract.csproj" />
   </ItemGroup>
 
 </Project>

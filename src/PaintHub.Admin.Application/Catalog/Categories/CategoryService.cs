@@ -1,5 +1,6 @@
 ﻿using PosterHub.Admin.Application.Contract.Catalog.Categories;
 using PosterHub.Domain;
+using PosterHub.Domain.Exceptions;
 
 namespace PosterHub.Admin.Application.Catalog.Categories
 {
@@ -29,7 +30,7 @@ namespace PosterHub.Admin.Application.Catalog.Categories
 
         public CategoryDto CreateCategory(CreateCategoryDto input)
         {
-            var category = _domainManager.CategoryManager.CreateCategory(
+            var category = _domainManager.Category.CreateCategory(
                 input.ParentCategoryId,
                 input.TreePath,
                 input.Name,
@@ -64,7 +65,31 @@ namespace PosterHub.Admin.Application.Catalog.Categories
                 category.ShowOnHomePage,
                 category.SubjectToAcl,
                 category.Published
-            ); ;
+            );
+        }
+
+        public CategoryWithIdDto GetCategoryById(int id, bool trackChanges)
+        {
+            var category = _repositoryManager.Category.GetCategoryById(id, trackChanges) 
+                ?? throw new CategoryNotFoundException(id);
+
+            return new CategoryWithIdDto(
+                category.Id,
+                category.Name,
+                category.FullName,
+                category.Description,
+                category.ParentCategoryId,
+                category.TreePath,
+                category.BadgeText,
+                category.BadegStyle,
+                category.MetaTitle,
+                category.MetaDescription,
+                category.MediaFiledId,
+                category.ShowOnMenu,
+                category.ShowOnHomePage,
+                category.SubjectToAcl,
+                category.Published
+            );
         }
     }
 }

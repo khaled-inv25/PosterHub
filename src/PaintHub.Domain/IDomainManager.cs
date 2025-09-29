@@ -4,6 +4,6 @@ namespace PosterHub.Domain
 {
     public interface IDomainManager
     {
-        ICategoryManager CategoryManager { get; } 
+        ICategoryManager Category { get; } 
     }
 }

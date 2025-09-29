@@ -103,8 +103,8 @@
     },
     "PosterHub.Logger.Contract/1.0.0": {
       "type": "project",
-      "path": "../../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj",
-      "msbuildProject": "../../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj"
+      "path": "../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj",
+      "msbuildProject": "../PosterHub.Logger.Contract/PosterHub.Logger.Contract.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -147,14 +147,14 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "projectReferences": {
-            "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {
-              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj"
-            },
             "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj": {
               "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Admin.Application.Contract\\PosterHub.Admin.Application.Contract.csproj"
             },
             "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Domain\\PosterHub.Domain.csproj": {
               "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PaintHub.Domain\\PosterHub.Domain.csproj"
+            },
+            "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {
+              "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj"
             }
           }
         }

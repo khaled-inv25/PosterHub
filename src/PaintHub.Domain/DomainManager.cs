@@ -11,6 +11,6 @@ namespace PosterHub.Domain
             _categoryManager = new Lazy<ICategoryManager>(() => new CategoryManager());
         }
 
-        public ICategoryManager CategoryManager => _categoryManager.Value;
+        public ICategoryManager Category => _categoryManager.Value;
     }
 }

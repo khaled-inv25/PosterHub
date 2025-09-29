@@ -29,8 +29,6 @@ namespace PosterHub.Domain.Catalog.Categories
                 treePath = "/root/";
             }
 
-            name = name.ToLower();
-
             var createdCategory = new Category(name, fullName, description);
             createdCategory.SetTreePath(treePath);
 

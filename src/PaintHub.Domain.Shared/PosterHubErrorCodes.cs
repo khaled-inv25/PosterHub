@@ -4,5 +4,6 @@
     {
         public const string CategoryNameConNotBeNullOrEmpty = "Category name must have a value and not null or white spaces";
         public const string TreePathConNotBeNullOrEmpty = "Tree path can't be empty or null";
+        public const string CategoryNotFound = "Category not found with Id: ";
     }
 }

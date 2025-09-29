@@ -24,5 +24,22 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
+    "Method": "GetCategoryById",
+    "RelativePath": "api/category/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [],
+    "EndpointName": "CategoryById"
   }
 ]

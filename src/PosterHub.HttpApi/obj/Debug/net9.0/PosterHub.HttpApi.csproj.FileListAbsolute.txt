@@ -355,3 +355,7 @@ D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.pdb
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.genruntimeconfig.cache
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\ref\PosterHub.HttpApi.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\nlog.config
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\NLog.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\PosterHub.Logger.Contract.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\PosterHub.Logger.Contract.pdb

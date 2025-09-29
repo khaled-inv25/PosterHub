@@ -4,6 +4,6 @@ namespace PosterHub.Admin.Application.Contract
 {
     public interface IServiceManager
     {
-        ICategoryService CategoryService { get; }
+        ICategoryService Category { get; }
     }
 }

@@ -73,7 +73,7 @@ namespace PosterHub.Domain.Catalog.Categories
                 throw new ArgumentNullException(message: PosterHubErrorCodes.CategoryNameConNotBeNullOrEmpty, paramName: nameof(name));
             }
 
-            Name = name;
+            Name = name.ToLower();
 
             return this;
         }

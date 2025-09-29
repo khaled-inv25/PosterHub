@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {}
+    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {}
   },
   "projects": {
-    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {
+    "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj",
+        "projectUniqueName": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj",
         "projectName": "PosterHub.Logger.Contract",
-        "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj",
+        "projectPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\PosterHub.Logger.Contract.csproj",
         "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\PosterHub.Logger.Contract\\obj\\",
+        "outputPath": "D:\\Developer\\AspNet\\Projects\\Core\\PosterHub\\src\\PosterHub.Logger.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

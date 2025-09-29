@@ -14,6 +14,6 @@ namespace PosterHub.Admin.Application
             _categoryService = new Lazy<ICategoryService>(() => new CategoryService(repositoryManager, domainManager));
         }
 
-        public ICategoryService CategoryService => _categoryService.Value;
+        public ICategoryService Category => _categoryService.Value;
     }
 }

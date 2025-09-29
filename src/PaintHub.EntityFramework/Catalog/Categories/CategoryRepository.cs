@@ -20,5 +20,15 @@ namespace PosterHub.EntityFramework.Catalog.Categories
 
             return input;
         }
+
+        public Category? GetCategoryById(int id, bool trackChanges)
+        {
+            return FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefault();
+        }
+
+        public Category? GetParent(int parentId)
+        {
+            return FindByCondition(c => c.ParentCategoryId.Equals(parentId), false).SingleOrDefault();
+        }
     }
 }
