@@ -91,5 +91,10 @@ namespace PosterHub.Admin.Application.Catalog.Categories
                 category.Published
             );
         }
+
+        public void UpdateCategory(int id, UpdateCategoryDto input)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

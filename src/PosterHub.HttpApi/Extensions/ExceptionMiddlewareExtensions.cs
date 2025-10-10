@@ -32,7 +32,6 @@ namespace PosterHub.HttpApi.Extensions
                             Message = contextFeature.Error.Message
                         }.ToString());
                     }
-
                 });
             });
         }

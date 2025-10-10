@@ -1,21 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PosterHub.Admin.Application.Contract;
 using PosterHub.Admin.Application.Contract.Catalog.Categories;
 
 namespace PosterHub.Presentation.Controllers
 {
-    [Route("api/category")]
+    [Route("api/admin/category")]
     [ApiController]
     public class CategoryController : ControllerBase
     {
-        private readonly IServiceManager _serviceManager;
+        private readonly IServiceAdminManager _serviceManager;
 
-        public CategoryController(IServiceManager serviceManager)
+        public CategoryController(IServiceAdminManager serviceManager)
         {
             _serviceManager = serviceManager;
         }
 
         [HttpGet]
+        [Authorize(Roles = "Administrator")]
         public IActionResult GetCategories()
         {
             return Ok(_serviceManager.Category.GetCategories(false));

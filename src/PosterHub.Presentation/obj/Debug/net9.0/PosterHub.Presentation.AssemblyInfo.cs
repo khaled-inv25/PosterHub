@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosterHub.Presentation")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6961261c7fedaf52d00b25a7f3011698bee596ae")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+27c9d79eb8f5d0a507e2bb0081024bc9b3f71c8d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosterHub.Presentation")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosterHub.Presentation")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

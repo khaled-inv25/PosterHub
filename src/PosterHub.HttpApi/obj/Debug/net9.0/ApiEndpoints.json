@@ -2,7 +2,7 @@
   {
     "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
     "Method": "GetCategories",
-    "RelativePath": "api/category",
+    "RelativePath": "api/admin/category",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +12,7 @@
   {
     "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
     "Method": "CreateCategory",
-    "RelativePath": "api/category",
+    "RelativePath": "api/admin/category",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -28,7 +28,7 @@
   {
     "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
     "Method": "GetCategoryById",
-    "RelativePath": "api/category/{id}",
+    "RelativePath": "api/admin/category/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -41,5 +41,37 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "CategoryById"
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.AuthenticationController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PosterHub.Admin.Application.Contract.Users.Authentication.UserAuthintecationDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.AuthenticationController",
+    "Method": "RegisterUser",
+    "RelativePath": "api/auth/register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PosterHub.Admin.Application.Contract.Users.RegisterUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.AspNetCore.Mvc;
 using NLog;
 using PosterHub.HttpApi.Extensions;
 using PosterHub.Logger.Contract;
@@ -16,6 +15,9 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(PosterHub.Presentation.AssemblyReference).Assembly);
+builder.Services.AddAuthorization();
+builder.Services.ConfigureUserIdentity();
+builder.Services.ConfigureJWT(builder.Configuration);
 
 builder.Services.AddOpenApi();
 
@@ -42,6 +44,7 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 
 app.UseCors("CorsPolicy");
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

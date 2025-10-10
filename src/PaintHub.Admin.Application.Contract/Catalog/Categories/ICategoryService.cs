@@ -9,7 +9,5 @@
         CategoryDto CreateCategory(CreateCategoryDto input);
 
         void UpdateCategory(int id, UpdateCategoryDto input);
-
-        void UpdateCategory(int id);
     }
 }
