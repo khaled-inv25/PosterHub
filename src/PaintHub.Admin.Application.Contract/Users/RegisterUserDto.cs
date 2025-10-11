@@ -5,10 +5,6 @@ namespace PosterHub.Admin.Application.Contract.Users
 {
     public record RegisterUserDto
     {
-        public string FirstName { get; init; }
-
-        public string LastName { get; init; }
-
         [Required(ErrorMessage = PosterHubErrorCodes.UsernameRequired)]
         public string UserName { get; init; }
 

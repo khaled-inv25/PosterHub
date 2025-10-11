@@ -183,7 +183,6 @@ D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.AssemblyInfoInputs.cache
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.AssemblyInfo.cs
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.csproj.CoreCompileInputs.cache
-D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.MvcApplicationPartsAssemblyInfo.cs
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.MvcApplicationPartsAssemblyInfo.cache
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.sourcelink.json
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\appsettings.Development.json

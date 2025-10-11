@@ -25,7 +25,9 @@ namespace PosterHub.Presentation.Controllers
                 return Unauthorized();
             }
 
-            return Ok(new { Token = await _services.Authentication.CreateToken() } );
+            var tokenDto = await _services.Authentication.CreateToken(populateExp: true);
+
+            return Ok(tokenDto);
         }
 
         [HttpPost("register")]

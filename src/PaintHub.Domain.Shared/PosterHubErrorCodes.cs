@@ -11,5 +11,7 @@
 
         public const string SecretKeyNull = "Secret Key is missing";
         public const string WrongUsernameOrPassword = "Authentication failed: Wrong username or password.";
+
+        public const string InvalidToken = "Invalid token";
     }
 }
