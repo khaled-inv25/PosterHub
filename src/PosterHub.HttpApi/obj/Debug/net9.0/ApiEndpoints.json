@@ -73,5 +73,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.TokenController",
+    "Method": "Refresh",
+    "RelativePath": "api/token",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PosterHub.Admin.Application.Contract.Users.Authentication.TokenDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

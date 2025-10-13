@@ -78,7 +78,7 @@ namespace PosterHub.Domain.Catalog.Categories
             return this;
         }
 
-        internal Category SetTreePath(string treePath)
+        public Category SetTreePath(string treePath)
         {
             if (string.IsNullOrWhiteSpace(treePath))
             {
@@ -86,6 +86,8 @@ namespace PosterHub.Domain.Catalog.Categories
             }
 
             TreePath = treePath;
+
+            Console.WriteLine(Id.ToString());
 
             return this;
         }

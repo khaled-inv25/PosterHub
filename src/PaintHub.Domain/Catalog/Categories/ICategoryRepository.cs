@@ -2,11 +2,11 @@
 {
     public interface ICategoryRepository
     {
-        IEnumerable<Category> GetCategories(bool truckChanges);
+        Task<IEnumerable<Category>> FindAllAsync(bool truckChanges);
 
-        Category CreateCategory(Category input);
+        Task<Category> CreateCategoryAsync(Category input);
 
-        Category? GetCategoryById(int id, bool trackChanges);
+        Task<Category?> FindByIdAsync(int id, bool trackChanges);
 
         Category? GetParent(int parentId);
     }

@@ -2,11 +2,11 @@
 {
     public interface ICategoryService
     {
-        IEnumerable<CategoryInListDto> GetCategories(bool truckChanges);
+        Task<IEnumerable<CategoryInListDto>> GetCategoriesAsync(bool truckChanges);
 
-        CategoryWithIdDto GetCategoryById(int id, bool trackChanges);
+        Task<CategoryWithIdDto> GetCategoryById(int id, bool trackChanges);
 
-        CategoryDto CreateCategory(CreateCategoryDto input);
+        Task<CategoryDto> CreateCategoryAsync(CreateCategoryDto input);
 
         void UpdateCategory(int id, UpdateCategoryDto input);
     }

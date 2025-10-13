@@ -4,7 +4,7 @@ namespace PosterHub.Domain.Catalog.Categories
 {
     public interface ICategoryManager
     {
-        Category CreateCategory(
+        Task<Category> CreateCategory(
             int? ParentCategoryId,
             string TreePath,
             string Name,

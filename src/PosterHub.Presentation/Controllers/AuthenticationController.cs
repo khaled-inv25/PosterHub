@@ -20,12 +20,12 @@ namespace PosterHub.Presentation.Controllers
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] UserAuthintecationDto model)
         {
-           if (!await _services.Authentication.ValidateUser(model))
+           if (!await _services.Authentication.ValidateUserAsync(model))
             {
                 return Unauthorized();
             }
 
-            var tokenDto = await _services.Authentication.CreateToken(populateExp: true);
+            var tokenDto = await _services.Authentication.CreateTokenAsync(populateExp: true);
 
             return Ok(tokenDto);
         }
@@ -33,7 +33,7 @@ namespace PosterHub.Presentation.Controllers
         [HttpPost("register")]
         public async Task<IActionResult> RegisterUser(RegisterUserDto model)
         {
-            var result = await _services.Authentication.RegisterUser(model);
+            var result = await _services.Authentication.RegisterUserAsync(model);
 
             return Ok(result);
         }

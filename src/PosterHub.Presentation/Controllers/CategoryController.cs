@@ -16,28 +16,27 @@ namespace PosterHub.Presentation.Controllers
             _serviceManager = serviceManager;
         }
 
-        [HttpGet]
-        [Authorize(Roles = "Administrator")]
-        public IActionResult GetCategories()
+        public async Task<IActionResult> GetCategories()
         {
-            return Ok(_serviceManager.Category.GetCategories(false));
+            return Ok(await _serviceManager.Category.GetCategoriesAsync(false));
         }
 
         [HttpGet("{id:int}", Name = "CategoryById")]
-        public IActionResult GetCategoryById(int id)
+        public async Task<IActionResult> GetCategoryById(int id)
         {
-            return Ok(_serviceManager.Category.GetCategoryById(id, false));
+            return Ok(await _serviceManager.Category.GetCategoryById(id, false));
         }
 
-        [HttpPost]
-        public IActionResult CreateCategory([FromBody] CreateCategoryDto model)
+        [Authorize(Roles = "Administrator")]
+        [HttpPost("create")]
+        public async Task<IActionResult> CreateCategory([FromBody] CreateCategoryDto model)
         {
             if (model == null)
             {
                 return BadRequest(ModelState);
             }
 
-            var createdCategory = _serviceManager.Category.CreateCategory(model);
+            var createdCategory = await _serviceManager.Category.CreateCategoryAsync(model);
 
             return CreatedAtRoute("CategoryById", new { id = 1 }, createdCategory);
         }

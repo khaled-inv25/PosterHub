@@ -2,8 +2,10 @@
 {
     public interface IAuthenticationService
     {
-        Task<object> RegisterUser(RegisterUserDto input);
-        Task<bool> ValidateUser(UserAuthintecationDto input);
-        Task<TokenDto> CreateToken(bool populateExp);
+        Task<object> RegisterUserAsync(RegisterUserDto input);
+        Task<bool> ValidateUserAsync(UserAuthintecationDto input);
+        Task<TokenDto> CreateTokenAsync(bool populateExp);
+        Task<TokenDto> RefreshTokenAsync(TokenDto tokenDto);
+
     }
 }

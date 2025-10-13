@@ -15,9 +15,9 @@ namespace PosterHub.Admin.Application.Catalog.Categories
             _domainManager = domainManager;
         }
 
-        public IEnumerable<CategoryInListDto> GetCategories(bool truckChanges)
+        public async Task<IEnumerable<CategoryInListDto>> GetCategoriesAsync(bool truckChanges)
         {
-            var categories = _repositoryManager.Category.GetCategories(truckChanges);
+            var categories = await _repositoryManager.Category.FindAllAsync(truckChanges);
 
             return categories.Select(c => new CategoryInListDto(
                 c.Name,
@@ -28,9 +28,9 @@ namespace PosterHub.Admin.Application.Catalog.Categories
                 )).ToList();
         }
 
-        public CategoryDto CreateCategory(CreateCategoryDto input)
+        public async Task<CategoryDto> CreateCategoryAsync(CreateCategoryDto input)
         {
-            var category = _domainManager.Category.CreateCategory(
+            var category = await _domainManager.Category.CreateCategory(
                 input.ParentCategoryId,
                 input.TreePath,
                 input.Name,
@@ -47,7 +47,7 @@ namespace PosterHub.Admin.Application.Catalog.Categories
                 input.Published
                 );
 
-            _repositoryManager.Category.CreateCategory(category);
+            await _repositoryManager.Category.CreateCategoryAsync(category);
             _repositoryManager.Save();
 
             return new CategoryDto(
@@ -68,9 +68,9 @@ namespace PosterHub.Admin.Application.Catalog.Categories
             );
         }
 
-        public CategoryWithIdDto GetCategoryById(int id, bool trackChanges)
+        public async Task<CategoryWithIdDto> GetCategoryById(int id, bool trackChanges)
         {
-            var category = _repositoryManager.Category.GetCategoryById(id, trackChanges) 
+            var category = await _repositoryManager.Category.FindByIdAsync(id, trackChanges) 
                 ?? throw new CategoryNotFoundException(id);
 
             return new CategoryWithIdDto(

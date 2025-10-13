@@ -14,9 +14,9 @@ namespace PosterHub.EntityFramework
             Context = posterHubDbContext;
         }
 
-        public void Create(T entity)
+        public async Task CreateAsync(T entity)
         {
-            Context.Set<T>().Add(entity);
+            await Context.Set<T>().AddAsync(entity);
         }
 
         public void Update(T entity)

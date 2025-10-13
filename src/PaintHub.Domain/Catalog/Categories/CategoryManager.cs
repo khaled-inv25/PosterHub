@@ -1,10 +1,18 @@
-﻿using PosterHub.Domain.Shared.Catalog.Category;
+﻿using PosterHub.Domain.Exceptions;
+using PosterHub.Domain.Shared.Catalog.Category;
 
 namespace PosterHub.Domain.Catalog.Categories
 {
     public class CategoryManager : ICategoryManager
     {
-        public Category CreateCategory(
+        private readonly ICategoryRepository _categoryRepository;
+
+        public CategoryManager(ICategoryRepository categoryRepository)
+        {
+            _categoryRepository = categoryRepository;
+        }
+
+        public async Task<Category> CreateCategory(
             int? parentCategoryId,
             string treePath,
             string name,
@@ -20,13 +28,12 @@ namespace PosterHub.Domain.Catalog.Categories
             bool subjectToAcl,
             bool published)
         {
-            if( parentCategoryId.HasValue)
+            if(parentCategoryId.HasValue)
             {
-                treePath = $"/{parentCategoryId.Value}/";
-            }
-            else
-            {
-                treePath = "/root/";
+                var parentCategory = await _categoryRepository.FindByIdAsync(parentCategoryId.Value, false) ??
+                    throw new CategoryNotFoundException(parentCategoryId.Value);
+
+                treePath = parentCategory.TreePath;
             }
 
             var createdCategory = new Category(name, fullName, description);

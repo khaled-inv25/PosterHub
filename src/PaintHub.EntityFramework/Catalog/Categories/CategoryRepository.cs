@@ -1,4 +1,5 @@
-﻿using PosterHub.Domain.Catalog.Categories;
+﻿using Microsoft.EntityFrameworkCore;
+using PosterHub.Domain.Catalog.Categories;
 using PosterHub.EntityFramework.AppDbContext;
 
 namespace PosterHub.EntityFramework.Catalog.Categories
@@ -9,21 +10,21 @@ namespace PosterHub.EntityFramework.Catalog.Categories
         {
         }
 
-        public IEnumerable<Category> GetCategories(bool truckChanges) =>
-            FindAll(truckChanges)
+        public async Task<IEnumerable<Category>> FindAllAsync(bool truckChanges) =>
+            await FindAll(truckChanges)
                 .OrderBy(c => c.Name)
-                .ToList();
+                .ToListAsync();
 
-        public Category CreateCategory(Category input)
+        public async Task<Category> CreateCategoryAsync(Category input)
         {
-            Create(input);
+            await CreateAsync(input);
 
             return input;
         }
 
-        public Category? GetCategoryById(int id, bool trackChanges)
+        public async Task<Category?> FindByIdAsync(int id, bool trackChanges)
         {
-            return FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefault();
+            return await FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
         }
 
         public Category? GetParent(int parentId)

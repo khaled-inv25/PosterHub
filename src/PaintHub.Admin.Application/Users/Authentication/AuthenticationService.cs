@@ -29,7 +29,7 @@ namespace PosterHub.Admin.Application.Users.Authentication
         }
 
         #region Token
-        public async Task<TokenDto> CreateToken(bool populateExp)
+        public async Task<TokenDto> CreateTokenAsync(bool populateExp)
         {
             var signinCredentials = GetSigningCredentials();
             var claims = await GetClaimsAsync();
@@ -38,6 +38,7 @@ namespace PosterHub.Admin.Application.Users.Authentication
             var refreshToken = GenerateRefreshToken();
 
             _user.RefreshToken = refreshToken;
+
             if (populateExp)
             {
                 _user.RefreshTokenExpiryTime = DateTime.Now.AddDays(7);
@@ -47,6 +48,22 @@ namespace PosterHub.Admin.Application.Users.Authentication
             var accessToken = new JwtSecurityTokenHandler().WriteToken(tokenOptions);
 
             return new TokenDto(accessToken, refreshToken);
+        }
+
+        public async Task<TokenDto> RefreshTokenAsync(TokenDto tokenDto)
+        {
+            var principal = GetPrincipalFromExpiredToken(tokenDto.AccessToken);
+
+            var user = await _userManager.FindByNameAsync(principal.Identity.Name);
+            if (user == null || user.RefreshToken != tokenDto.RefreshToken || user.RefreshTokenExpiryTime <= DateTime.Now)
+            {
+                //throw new RefreshTokenBadRequest();
+                throw new Exception("Bad refresh token");
+            }
+
+            _user = user;
+
+            return await CreateTokenAsync(false);
         }
 
         private SigningCredentials GetSigningCredentials()
@@ -131,7 +148,7 @@ namespace PosterHub.Admin.Application.Users.Authentication
 
         #endregion
 
-        public async Task<object> RegisterUser(RegisterUserDto input)
+        public async Task<object> RegisterUserAsync(RegisterUserDto input)
         {
             var user = new User()
             {
@@ -150,7 +167,7 @@ namespace PosterHub.Admin.Application.Users.Authentication
             return result;
         }
 
-        public async Task<bool> ValidateUser(UserAuthintecationDto input)
+        public async Task<bool> ValidateUserAsync(UserAuthintecationDto input)
         {
             _user = await _userManager.FindByNameAsync(input.Username);
 
@@ -158,11 +175,10 @@ namespace PosterHub.Admin.Application.Users.Authentication
 
             if (!result)
             {
-                _loggerManager.LogWarn($"{nameof(ValidateUser)}: {PosterHubErrorCodes.WrongUsernameOrPassword}");
+                _loggerManager.LogWarn($"{nameof(ValidateUserAsync)}: {PosterHubErrorCodes.WrongUsernameOrPassword}");
             }
 
             return result;
         }
-
     }
 }
