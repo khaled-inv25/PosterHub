@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.HttpOverrides;
+using Microsoft.Extensions.DependencyInjection;
 using NLog;
 using PosterHub.HttpApi.Extensions;
 using PosterHub.Logger.Contract;

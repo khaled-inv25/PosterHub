@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosterHub.Domain.Shared")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+08bff05d830b8b38d432f71e732244c4eef3e4dc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a641ec868e17bf118d9ac960f371a04c59208417")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosterHub.Domain.Shared")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosterHub.Domain.Shared")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

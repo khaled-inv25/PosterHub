@@ -20,6 +20,7 @@ namespace PosterHub.Admin.Application.Catalog.Categories
             var categories = await _repositoryManager.Category.FindAllAsync(truckChanges);
 
             return categories.Select(c => new CategoryInListDto(
+                c.Id,
                 c.Name,
                 c.FullName,
                 c.TreePath,
