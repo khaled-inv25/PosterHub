@@ -4,29 +4,15 @@ using PosterHub.Domain.Shared.Catalog.Category;
 
 namespace PosterHub.Domain.Catalog.Categories
 {
-    public class Category : BaseEntity<int>, ITreeNode
+    public class Category : BaseEntity<int>
     {
-        #region ITreeNode 
-
         public int? ParentCategoryId { get; set; }
 
         public Category Parent {  get; set; }
 
+        public string TreePath { get; private set; }
+
         public ICollection<Category> Children { get; set; }
-
-        public string TreePath { get; set; }
-
-        public IEnumerable<ITreeNode> GetChildNodes()
-        {
-            throw new NotImplementedException();
-        }
-
-        public ITreeNode GetParentNode()
-        {
-            throw new NotImplementedException();
-        }
-
-        #endregion
 
         public string Name { get; private set; }
 
@@ -54,11 +40,13 @@ namespace PosterHub.Domain.Catalog.Categories
 
         public bool Published { get; set; }
 
-        public Category(string name, string fullName, string description)
+        public Category(string name, string fullName, string description, int? parentCategoryId)
         {
             SetName(name);
             FullName = fullName;
             Description = description;
+
+            ParentCategoryId = parentCategoryId;
 
             ShowOnMenu = true;
             ShowOnHomePage = true;
@@ -78,19 +66,31 @@ namespace PosterHub.Domain.Catalog.Categories
             return this;
         }
 
-        public Category SetTreePath(string treePath)
+        internal Category SetInternalTreePath(string treePath)
         {
-            if (string.IsNullOrWhiteSpace(treePath))
+            if (!ParentCategoryId.HasValue)
             {
-                throw new ArgumentNullException(message: PosterHubErrorCodes.TreePathConNotBeNullOrEmpty, paramName: nameof(treePath));
+                TreePath = string.Empty;
+                return this;
             }
 
             TreePath = treePath;
 
-            Console.WriteLine(Id.ToString());
-
             return this;
         }
         
+        public Category UpdateTreePath()
+        {
+            if (string.IsNullOrEmpty(TreePath))
+            {
+                TreePath = $"/{Id}/";
+                return this;
+            }
+
+            TreePath += $"{Id}/";
+
+            return this;
+        }
+
     }
 }

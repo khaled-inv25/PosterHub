@@ -9,5 +9,7 @@
         Task<Category?> FindByIdAsync(int id, bool trackChanges);
 
         Category? GetParent(int parentId);
+
+        IQueryable<Category> GetQueryable(int id, bool trackChanges);
     }
 }

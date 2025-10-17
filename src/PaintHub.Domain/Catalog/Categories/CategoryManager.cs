@@ -1,4 +1,5 @@
-﻿using PosterHub.Domain.Exceptions;
+﻿using Microsoft.EntityFrameworkCore;
+using PosterHub.Domain.Exceptions;
 using PosterHub.Domain.Shared.Catalog.Category;
 
 namespace PosterHub.Domain.Catalog.Categories
@@ -14,7 +15,6 @@ namespace PosterHub.Domain.Catalog.Categories
 
         public async Task<Category> CreateCategory(
             int? parentCategoryId,
-            string treePath,
             string name,
             string fullName,
             string description,
@@ -28,16 +28,17 @@ namespace PosterHub.Domain.Catalog.Categories
             bool subjectToAcl,
             bool published)
         {
+            string parentTreePath = "";
+
             if(parentCategoryId.HasValue)
             {
-                var parentCategory = await _categoryRepository.FindByIdAsync(parentCategoryId.Value, false) ??
-                    throw new CategoryNotFoundException(parentCategoryId.Value);
+                var parentCategory = _categoryRepository.GetQueryable(parentCategoryId.Value, trackChanges: false);
 
-                treePath = parentCategory.TreePath;
+                parentTreePath = await parentCategory.Select(c => c.TreePath).SingleAsync();
             }
 
-            var createdCategory = new Category(name, fullName, description);
-            createdCategory.SetTreePath(treePath);
+            var createdCategory = new Category(name, fullName, description, parentCategoryId);
+            createdCategory.SetInternalTreePath(parentTreePath);
 
             return createdCategory;
         }

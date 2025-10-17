@@ -3,6 +3,7 @@
 namespace PosterHub.Admin.Application.Contract.Catalog.Categories
 {
     public record CategoryDto(
+        int Id,
         string Name,
         string FullName,
         string Description,

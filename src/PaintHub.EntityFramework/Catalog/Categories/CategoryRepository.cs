@@ -31,5 +31,10 @@ namespace PosterHub.EntityFramework.Catalog.Categories
         {
             return FindByCondition(c => c.ParentCategoryId.Equals(parentId), false).SingleOrDefault();
         }
+
+        public IQueryable<Category> GetQueryable(int id, bool trackChanges)
+        {
+            return FindByCondition(c => c.Id.Equals(id), trackChanges);
+        }
     }
 }

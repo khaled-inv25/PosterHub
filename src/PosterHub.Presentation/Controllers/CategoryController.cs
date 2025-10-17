@@ -38,7 +38,7 @@ namespace PosterHub.Presentation.Controllers
 
             var createdCategory = await _serviceManager.Category.CreateCategoryAsync(model);
 
-            return CreatedAtRoute("CategoryById", new { id = 1 }, createdCategory);
+            return CreatedAtRoute("CategoryById", new { id = createdCategory.Id }, createdCategory);
         }
     }
 }

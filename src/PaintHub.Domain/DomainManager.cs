@@ -6,9 +6,9 @@ namespace PosterHub.Domain
     {
         private readonly Lazy<ICategoryManager> _categoryManager;
 
-        public DomainManager()
+        public DomainManager(IRepositoryManager repositoryManager)
         {
-            _categoryManager = new Lazy<ICategoryManager>(() => new CategoryManager());
+            _categoryManager = new Lazy<ICategoryManager>(() => new CategoryManager(repositoryManager.Category));
         }
 
         public ICategoryManager Category => _categoryManager.Value;

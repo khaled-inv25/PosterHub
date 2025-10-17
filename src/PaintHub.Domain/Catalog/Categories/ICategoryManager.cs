@@ -6,7 +6,6 @@ namespace PosterHub.Domain.Catalog.Categories
     {
         Task<Category> CreateCategory(
             int? ParentCategoryId,
-            string TreePath,
             string Name,
             string FullName,
             string Description,

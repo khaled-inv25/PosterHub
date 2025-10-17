@@ -22,6 +22,7 @@ namespace PosterHub.Admin.Application.Catalog.Categories
             return categories.Select(c => new CategoryInListDto(
                 c.Name,
                 c.FullName,
+                c.TreePath,
                 c.Published,
                 c.ShowOnMenu,
                 c.ShowOnHomePage
@@ -32,7 +33,6 @@ namespace PosterHub.Admin.Application.Catalog.Categories
         {
             var category = await _domainManager.Category.CreateCategory(
                 input.ParentCategoryId,
-                input.TreePath,
                 input.Name,
                 input.FullName,
                 input.Description,
@@ -50,7 +50,11 @@ namespace PosterHub.Admin.Application.Catalog.Categories
             await _repositoryManager.Category.CreateCategoryAsync(category);
             _repositoryManager.Save();
 
+            category.UpdateTreePath();
+            _repositoryManager.Save();
+
             return new CategoryDto(
+                category.Id,
                 category.Name,
                 category.FullName,
                 category.Description,

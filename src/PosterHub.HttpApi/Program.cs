@@ -15,7 +15,7 @@ builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
 builder.Services.AddControllers()
     .AddApplicationPart(typeof(PosterHub.Presentation.AssemblyReference).Assembly);
-builder.Services.AddAuthorization();
+builder.Services.AddAuthentication();
 builder.Services.ConfigureUserIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
 

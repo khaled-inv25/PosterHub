@@ -7,9 +7,6 @@ namespace PosterHub.Admin.Application.Contract.Catalog.Categories
     {
         public int? ParentCategoryId { get; set; }
 
-        [AllowNull]
-        public string? TreePath { get; set; }
-
         public string Name { get; set; }
 
         [AllowNull]

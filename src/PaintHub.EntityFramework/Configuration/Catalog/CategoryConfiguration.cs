@@ -27,6 +27,9 @@ namespace PosterHub.EntityFramework.Configuration.Catalog
                 .IsRequired(false)
                 .HasMaxLength(CategoryConsts.MaxFullNameLength);
 
+            builder.Property(c => c.Description)
+                .IsRequired(false);
+
             builder.Property(c => c.BadegStyle)
                 .IsRequired();
 

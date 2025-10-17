@@ -3,26 +3,10 @@
     "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
     "Method": "GetCategories",
     "RelativePath": "api/admin/category",
-    "HttpMethod": "GET",
+    "HttpMethod": "",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
-    "Method": "CreateCategory",
-    "RelativePath": "api/admin/category",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "PosterHub.Admin.Application.Contract.Catalog.Categories.CreateCategoryDto",
-        "IsRequired": true
-      }
-    ],
     "ReturnTypes": []
   },
   {
@@ -41,6 +25,22 @@
     ],
     "ReturnTypes": [],
     "EndpointName": "CategoryById"
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
+    "Method": "CreateCategory",
+    "RelativePath": "api/admin/category/create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "PosterHub.Admin.Application.Contract.Catalog.Categories.CreateCategoryDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   },
   {
     "ContainingType": "PosterHub.Presentation.Controllers.AuthenticationController",
