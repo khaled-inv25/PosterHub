@@ -1,5 +1,4 @@
-﻿using PosterHub.Domain.Content;
-using PosterHub.Domain.Shared;
+﻿using PosterHub.Domain.Shared;
 using PosterHub.Domain.Shared.Catalog.Category;
 
 namespace PosterHub.Domain.Catalog.Categories
@@ -16,8 +15,6 @@ namespace PosterHub.Domain.Catalog.Categories
 
         public string Name { get; private set; }
 
-        public string FullName { get; set; }
-
         public string Description { get; set; }
 
         public string BadgeText { get; set; }
@@ -28,9 +25,7 @@ namespace PosterHub.Domain.Catalog.Categories
 
         public string MetaDescription { get; set; }
 
-        public Guid? MediaFiledId { get; set; }
-
-        public MediaFile? MediaFile { get; set; }
+        public Guid? PictureId { get; set; }
 
         public bool ShowOnMenu { get; set; }
 
@@ -40,10 +35,9 @@ namespace PosterHub.Domain.Catalog.Categories
 
         public bool Published { get; set; }
 
-        public Category(string name, string fullName, string description, int? parentCategoryId)
+        public Category(string name, string description, int? parentCategoryId)
         {
             SetName(name);
-            FullName = fullName;
             Description = description;
 
             ParentCategoryId = parentCategoryId;
@@ -51,7 +45,7 @@ namespace PosterHub.Domain.Catalog.Categories
             ShowOnMenu = true;
             ShowOnHomePage = true;
             SubjectToAcl = false;
-            Published = true;
+            Published = false;
         }
 
         internal Category SetName(string name)
@@ -66,7 +60,7 @@ namespace PosterHub.Domain.Catalog.Categories
             return this;
         }
 
-        internal Category SetInternalTreePath(string treePath)
+        public Category SetTreePath(string treePath)
         {
             if (!ParentCategoryId.HasValue)
             {
@@ -78,7 +72,7 @@ namespace PosterHub.Domain.Catalog.Categories
 
             return this;
         }
-        
+
         public Category UpdateTreePath()
         {
             if (string.IsNullOrEmpty(TreePath))
@@ -92,5 +86,31 @@ namespace PosterHub.Domain.Catalog.Categories
             return this;
         }
 
+        public Category ShouOnMenu(bool option)
+        {
+            if (Published && option)
+            {
+                ShowOnMenu = option;
+            }
+
+            return this;
+        }
+
+        public Category ShowOnHome(bool option)
+        {
+            if (Published && option)
+            {
+                ShowOnHomePage = option;
+            }
+
+            return this;
+        }
+
+        public Category Publish(bool option)
+        {
+            Published = option;
+
+            return this;
+        }
     }
 }

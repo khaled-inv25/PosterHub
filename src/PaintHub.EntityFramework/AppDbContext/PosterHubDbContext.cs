@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using PosterHub.Domain.Catalog.Categories;
 using PosterHub.Domain.Users;
-using PosterHub.EntityFramework.Configuration.Catalog;
+using PosterHub.EntityFramework.Catalog.Categories;
 using PosterHub.EntityFramework.Configuration.Users;
 
 namespace PosterHub.EntityFramework.AppDbContext
@@ -20,7 +20,6 @@ namespace PosterHub.EntityFramework.AppDbContext
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.ApplyConfiguration(new CategoryConfiguration());
-            //modelBuilder.ApplyConfiguration(new CategorySeed());
             modelBuilder.ApplyConfiguration(new RoleConfiguration());
             modelBuilder.ApplyConfiguration(new UserConfiguration());
         }

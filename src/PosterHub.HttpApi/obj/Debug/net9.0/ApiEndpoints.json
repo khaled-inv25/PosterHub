@@ -1,16 +1,6 @@
 [
   {
     "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
-    "Method": "GetCategories",
-    "RelativePath": "api/admin/category",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
     "Method": "GetCategoryById",
     "RelativePath": "api/admin/category/{id}",
     "HttpMethod": "GET",
@@ -38,6 +28,22 @@
         "Name": "model",
         "Type": "PosterHub.Admin.Application.Contract.Catalog.Categories.CreateCategoryDto",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PosterHub.Presentation.Controllers.CategoryController",
+    "Method": "GetCategories",
+    "RelativePath": "api/admin/category/list",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "trackChanges",
+        "Type": "System.Boolean",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

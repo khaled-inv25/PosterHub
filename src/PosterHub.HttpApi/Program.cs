@@ -1,5 +1,4 @@
 using Microsoft.AspNetCore.HttpOverrides;
-using Microsoft.Extensions.DependencyInjection;
 using NLog;
 using PosterHub.HttpApi.Extensions;
 using PosterHub.Logger.Contract;
@@ -20,6 +19,7 @@ builder.Services.AddAuthentication();
 builder.Services.ConfigureUserIdentity();
 builder.Services.ConfigureJWT(builder.Configuration);
 
+builder.Services.ConfigureSwagger();
 builder.Services.AddOpenApi();
 
 var app = builder.Build();
@@ -30,6 +30,11 @@ app.ConfigureExceptionHandler(logger);
 if (app.Environment.IsDevelopment())
 {
     app.MapOpenApi();
+    app.UseSwagger();
+    app.UseSwaggerUI(s =>
+    {
+        s.SwaggerEndpoint("/swagger/v1/swagger.json", "PosterHub API v1");
+    });
 }
 else
 {

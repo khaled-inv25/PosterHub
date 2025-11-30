@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using PosterHub.Domain.Shared;
 using PosterHub.EntityFramework.AppDbContext;
 using System.Linq.Expressions;
@@ -14,9 +15,10 @@ namespace PosterHub.EntityFramework
             Context = posterHubDbContext;
         }
 
-        public async Task CreateAsync(T entity)
+        public async Task<T> CreateAsync(T entity)
         {
-            await Context.Set<T>().AddAsync(entity);
+            var entry = await Context.Set<T>().AddAsync(entity);
+            return entry.Entity;
         }
 
         public void Update(T entity)
@@ -43,5 +45,7 @@ namespace PosterHub.EntityFramework
         {
             return !trackChanges ? Context.Set<T>().AsNoTracking().FirstOrDefault(e => EF.Property<object>(e, "Id") == id) : Context.Set<T>().Find(id);
         }
+
+        public Task<bool> AnyAsync(Expression<Func<T, bool>> expression) => Context.Set<T>().AsNoTracking().AnyAsync(expression);
     }
 }

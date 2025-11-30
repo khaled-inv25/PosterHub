@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using PosterHub.Domain.Catalog.Categories;
 using PosterHub.EntityFramework.AppDbContext;
+using System.Linq.Expressions;
 
 namespace PosterHub.EntityFramework.Catalog.Categories
 {
@@ -15,13 +16,6 @@ namespace PosterHub.EntityFramework.Catalog.Categories
                 .OrderBy(c => c.Name)
                 .ToListAsync();
 
-        public async Task<Category> CreateCategoryAsync(Category input)
-        {
-            await CreateAsync(input);
-
-            return input;
-        }
-
         public async Task<Category?> FindByIdAsync(int id, bool trackChanges)
         {
             return await FindByCondition(c => c.Id.Equals(id), trackChanges).SingleOrDefaultAsync();
@@ -30,11 +24,6 @@ namespace PosterHub.EntityFramework.Catalog.Categories
         public Category? GetParent(int parentId)
         {
             return FindByCondition(c => c.ParentCategoryId.Equals(parentId), false).SingleOrDefault();
-        }
-
-        public IQueryable<Category> GetQueryable(int id, bool trackChanges)
-        {
-            return FindByCondition(c => c.Id.Equals(id), trackChanges);
         }
     }
 }

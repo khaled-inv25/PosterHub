@@ -6,9 +6,10 @@ namespace PosterHub.Domain.Shared
     {
         IQueryable<T> FindAll(bool trackChanges);
         IQueryable<T> FindByCondition(Expression<Func<T, bool>> expression, bool trackChanges);
-        Task CreateAsync(T entity); 
+        Task<T> CreateAsync(T entity); 
         void Update(T entity);
         void Delete(T entity);
         T? FindById(object id, bool trackChanges);
+        Task<bool> AnyAsync(Expression<Func<T, bool>> expression);
     }
 }

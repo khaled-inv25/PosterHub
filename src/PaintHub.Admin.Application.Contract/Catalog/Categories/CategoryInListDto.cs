@@ -3,7 +3,6 @@
     public record CategoryInListDto(
         int Id,
         string Name, 
-        string FullName,
         string TreePath,
         bool Published,
         bool ShowOnMenu,

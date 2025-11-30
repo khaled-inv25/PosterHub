@@ -187,18 +187,12 @@ namespace PosterHub.HttpApi.Migrations
                         .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("Description")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("FullName")
-                        .HasMaxLength(400)
-                        .HasColumnType("nvarchar(400)");
-
-                    b.Property<Guid?>("MediaFiledId")
-                        .HasColumnType("uniqueidentifier");
+                        .HasMaxLength(1024)
+                        .HasColumnType("nvarchar(1024)");
 
                     b.Property<string>("MetaDescription")
-                        .HasMaxLength(1000)
-                        .HasColumnType("nvarchar(1000)");
+                        .HasMaxLength(1024)
+                        .HasColumnType("nvarchar(1024)");
 
                     b.Property<string>("MetaTitle")
                         .HasMaxLength(400)
@@ -211,6 +205,10 @@ namespace PosterHub.HttpApi.Migrations
 
                     b.Property<int?>("ParentCategoryId")
                         .HasColumnType("int");
+
+                    b.Property<Guid?>("PictureId")
+                        .HasMaxLength(38)
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<bool>("Published")
                         .HasColumnType("bit");
@@ -230,22 +228,9 @@ namespace PosterHub.HttpApi.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("MediaFiledId");
-
                     b.HasIndex("ParentCategoryId");
 
                     b.ToTable("Categories");
-                });
-
-            modelBuilder.Entity("PosterHub.Domain.Content.MediaFile", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("MediaFile");
                 });
 
             modelBuilder.Entity("PosterHub.Domain.Users.User", b =>
@@ -372,17 +357,10 @@ namespace PosterHub.HttpApi.Migrations
 
             modelBuilder.Entity("PosterHub.Domain.Catalog.Categories.Category", b =>
                 {
-                    b.HasOne("PosterHub.Domain.Content.MediaFile", "MediaFile")
-                        .WithMany()
-                        .HasForeignKey("MediaFiledId")
-                        .OnDelete(DeleteBehavior.SetNull);
-
                     b.HasOne("PosterHub.Domain.Catalog.Categories.Category", "Parent")
                         .WithMany("Children")
                         .HasForeignKey("ParentCategoryId")
                         .OnDelete(DeleteBehavior.NoAction);
-
-                    b.Navigation("MediaFile");
 
                     b.Navigation("Parent");
                 });

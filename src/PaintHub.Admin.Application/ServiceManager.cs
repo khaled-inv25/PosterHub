@@ -29,6 +29,7 @@ namespace PosterHub.Admin.Application
         }
 
         public ICategoryService Category => _categoryService.Value;
+
         public IAuthenticationService Authentication => _authenticationService.Value;
     }
 }

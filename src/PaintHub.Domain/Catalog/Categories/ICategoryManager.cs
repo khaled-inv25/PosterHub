@@ -4,19 +4,9 @@ namespace PosterHub.Domain.Catalog.Categories
 {
     public interface ICategoryManager
     {
-        Task<Category> CreateCategory(
-            int? ParentCategoryId,
-            string Name,
-            string FullName,
-            string Description,
-            string BadgeText,
-            BadgeStyle BadegStyle,
-            string MetaTitle,
-            string MetaDescription,
-            Guid? MediaFiledId,
-            bool ShowOnMenu,
-            bool ShowOnHomePage,
-            bool SubjectToAcl,
-            bool Published);
+        Task<Category> CreateCategoryAsync(
+            int? parentCategoryId,
+            string name,
+            string description);
     }
 }

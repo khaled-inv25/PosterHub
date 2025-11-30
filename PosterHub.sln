@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosterHub.Presentation", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PosterHub.Logger.Contract", "src\PosterHub.Logger.Contract\PosterHub.Logger.Contract.csproj", "{669D400D-A1DE-5A99-9BAE-158D07B6739A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Account", "Account", "{1124A1FB-6BEE-4311-94AD-88F3AB7DF21C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

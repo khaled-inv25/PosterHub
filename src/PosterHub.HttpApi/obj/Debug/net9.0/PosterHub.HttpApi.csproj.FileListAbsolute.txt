@@ -363,3 +363,6 @@ D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\obj\Debug\net9.0\PosterHub.HttpApi.MvcApplicationPartsAssemblyInfo.cs
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Developer\AspNet\Projects\Core\PosterHub\src\PosterHub.HttpApi\bin\Debug\net9.0\Swashbuckle.AspNetCore.SwaggerUI.dll

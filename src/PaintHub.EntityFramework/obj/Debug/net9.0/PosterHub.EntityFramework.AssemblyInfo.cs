@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PosterHub.EntityFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a641ec868e17bf118d9ac960f371a04c59208417")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3471b5c72180f6596658d2275b877f847ee0c0ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("PosterHub.EntityFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PosterHub.EntityFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

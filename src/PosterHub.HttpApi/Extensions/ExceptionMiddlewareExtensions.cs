@@ -21,6 +21,7 @@ namespace PosterHub.HttpApi.Extensions
                         context.Response.StatusCode = contextFeature.Error switch
                         {
                             NotFoundException => StatusCodes.Status404NotFound,
+                            BusinessException => StatusCodes.Status422UnprocessableEntity,
                             _ => StatusCodes.Status500InternalServerError
                         };
 
